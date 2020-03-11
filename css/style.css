@@ -63,17 +63,17 @@ header{
    padding: 30px 10%;
 }
 
-.nav-item li{
+.nav-list li{
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-item li a{
+.nav-list li a{
     transition: all 0.3s ease 0s;
 }
 
 
-.nav-item li a:hover{
+.nav-list li a:hover{
     color: #0088a9;
 }
 
