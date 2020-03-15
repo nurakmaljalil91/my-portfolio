@@ -19,16 +19,20 @@
     --body-font: 'Fira Sans Extra Condensed', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c6e02e;
-    --body-font-color: #515151;
+    --body-font-color: #41B3A3;
+    --main-body-color: #41B3A3;
+    --secondary-body-color: #8bc9c4;
+    --third-body-color: #E27D60;
 }
 
 body {
     font-family: var(--main-font);
+    background-color: var(--secondary-body-color);
 }
 
 nav {
     height: 10vh;
-    background: #edc7b7;
+    background: var(--body-font-color);
 }
 
 .nav-links {
@@ -44,7 +48,7 @@ nav {
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .landing {
@@ -54,10 +58,43 @@ nav {
     align-items: center;
 }
 
-.landing h1 {
+.landing img {
+    width: 300px;
+    height: 300px;
+}
+
+.description {
     margin: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description h2 {
+    font: var(--main-font);
+    font-size: 25px;
+    color: white;
+}
+
+.description h1 {
     font-size: 50px;
-    color: #ae5fce;
+    color: var(--main-body-color);
+}
+
+.description .icon {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.description .icon a {
+    padding: 0.6rem;
+    text-decoration: none;
+    color: var(--main-body-color);
+}
+
+.description .icon a:hover {
+    color: var(--third-body-color);
+    transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width:768px) {
@@ -76,11 +113,11 @@ nav {
         right: 5%;
         top: 50%;
         transform: translate(-5%, -50%);
-        z-index: 2;
+        z-index: 3;
     }
     .nav-links {
         position: fixed;
-        background: #edc7b7;
+        background: var(--body-font-color);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -90,12 +127,22 @@ nav {
         pointer-events: none;
     }
     .nav-links.open {
-        clip-path: circle(1020px at 90% -10%);
-        -webkit-clip-path: circle(1020px at 90% -10%);
+        clip-path: circle(1080px at 90% -10%);
+        -webkit-clip-path: circle(1080px at 90% -10%);
         pointer-events: all;
     }
     .landing {
         flex-direction: column-reverse;
+    }
+    .landing img {
+        width: 200px;
+        height: 200px;
+    }
+    .description h1 {
+        font-size: 40px;
+    }
+    .description h2 {
+        font-size: 15px;
     }
     .nav-links li {
         opacity: 0;
