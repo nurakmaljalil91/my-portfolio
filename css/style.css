@@ -31,8 +31,19 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     height: 10vh;
     background: var(--body-font-color);
+}
+
+.logo {
+    color: white;
+    margin-left: auto;
+    letter-spacing: 2.5px;
+    font-size: 30px;
 }
 
 .nav-links {
@@ -58,7 +69,7 @@ nav {
     align-items: center;
 }
 
-.landing img {
+.image-profile img {
     width: 300px;
     height: 300px;
 }
@@ -78,12 +89,13 @@ nav {
 
 .description h1 {
     font-size: 50px;
-    color: var(--main-body-color);
+    color: #006e56;
 }
 
 .description .icon {
     position: relative;
     margin-top: 1rem;
+    z-index: -1;
 }
 
 .description .icon a {
@@ -106,6 +118,7 @@ nav {
     }
     nav {
         position: relative;
+        align-items: stretch;
     }
     .hamburger {
         position: absolute;
@@ -114,6 +127,12 @@ nav {
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 3;
+    }
+    .logo {
+        font-size: 20px;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
     }
     .nav-links {
         position: fixed;
@@ -132,17 +151,36 @@ nav {
         pointer-events: all;
     }
     .landing {
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+        word-spacing: -.25rem;
+        padding: -5px;
+        /* font-size: 0; */
+        /* justify-content: center; */
     }
-    .landing img {
+    .image-profile {
+        float: left;
+        margin: 0;
+        padding: 0;
+        /* background-color: red; */
+    }
+    .image-profile img {
         width: 200px;
         height: 200px;
+        /* background-color: red; */
     }
     .description h1 {
-        font-size: 40px;
+        /* margin-top: auto; */
+        /* background-color: red; */
+        /* justify-content: center; */
+        font-size: 35px;
     }
     .description h2 {
-        font-size: 15px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .description .icon {
+        position: absolute;
     }
     .nav-links li {
         opacity: 0;
