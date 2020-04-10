@@ -46,6 +46,11 @@ nav {
     font-size: 30px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -152,8 +157,8 @@ nav {
     }
     .landing {
         display: flex;
-        flex-direction: column;
-        word-spacing: -.25rem;
+        flex-direction: column-reverse;
+        /* word-spacing: -.25rem; */
         padding: -5px;
         /* font-size: 0; */
         /* justify-content: center; */
@@ -169,6 +174,10 @@ nav {
         height: 200px;
         /* background-color: red; */
     }
+    .description {
+        margin-top: 0;
+        text-align: center;
+    }
     .description h1 {
         /* margin-top: auto; */
         /* background-color: red; */
@@ -181,6 +190,11 @@ nav {
     }
     .description .icon {
         position: absolute;
+        justify-content: center;
+        /* display: inline-block;
+        width: 100%; */
+        /* text-align: center; */
+        /* margin-left: -60; */
     }
     .nav-links li {
         opacity: 0;
