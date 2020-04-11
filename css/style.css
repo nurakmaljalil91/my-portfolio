@@ -216,6 +216,9 @@ nav {
         /* text-align: center; */
         /* margin-left: -60; */
     }
+    .description a.btn-download-cv {
+        margin-top: 60px;
+    }
     .nav-links li {
         opacity: 0;
     }
