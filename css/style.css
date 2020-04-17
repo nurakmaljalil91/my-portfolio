@@ -30,6 +30,9 @@ body {
     background-color: var(--secondary-body-color);
 }
 
+
+/* global navbar */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -75,6 +78,9 @@ nav {
     color: var(--third-body-color);
 }
 
+
+/* Home page */
+
 .landing {
     height: 90vh;
     display: flex;
@@ -108,7 +114,6 @@ nav {
 .description .icon {
     position: relative;
     margin-top: 1rem;
-    /* z-index: -1; */
 }
 
 .description .icon a {
@@ -142,6 +147,9 @@ nav {
     border-color: rgba(255, 255, 255, 1);
 }
 
+
+/* Screen media */
+
 @media screen and (max-width:768px) {
     .line {
         width: 30px;
@@ -149,6 +157,7 @@ nav {
         background: white;
         margin: 5px;
     }
+    /* Navbar */
     nav {
         position: relative;
         align-items: stretch;
@@ -183,33 +192,26 @@ nav {
         -webkit-clip-path: circle(1080px at 90% -10%);
         pointer-events: all;
     }
+    /* Home page */
     .landing {
         display: flex;
         flex-direction: column-reverse;
-        /* word-spacing: -.25rem; */
         padding: -5px;
-        /* font-size: 0; */
-        /* justify-content: center; */
     }
     .image-profile {
         float: left;
         margin: 0;
         padding: 0;
-        /* background-color: red; */
     }
     .image-profile img {
         width: 200px;
         height: 200px;
-        /* background-color: red; */
     }
     .description {
         margin-top: 0;
         text-align: center;
     }
     .description h1 {
-        /* margin-top: auto; */
-        /* background-color: red; */
-        /* justify-content: center; */
         font-size: 35px;
     }
     .description h2 {
@@ -219,10 +221,6 @@ nav {
     .description .icon {
         position: absolute;
         justify-content: center;
-        /* display: inline-block;
-        width: 100%; */
-        /* text-align: center; */
-        /* margin-left: -60; */
     }
     .description a.btn-download-cv {
         margin-top: 60px;
@@ -246,6 +244,9 @@ nav {
         opacity: 1;
     }
 }
+
+
+/* Animation */
 
 .bouncy {
     animation: bouncy 5s infinite linear;
