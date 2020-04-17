@@ -51,6 +51,10 @@ nav {
     color: white;
 }
 
+.logo a:hover {
+    color: var(--third-body-color);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -65,6 +69,10 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.nav-links li a:hover {
+    color: var(--third-body-color);
 }
 
 .landing {
