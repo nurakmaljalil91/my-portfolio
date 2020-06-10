@@ -1,0 +1,19 @@
+{
+  "name": "profile_page_version_3",
+  "version": "1.0.0",
+  "description": "My own profile page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurakmaljalil91/profile-page-3.git"
+  },
+  "author": "Nur \"arcmole007\" Akmal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurakmaljalil91/profile-page-3/issues"
+  },
+  "homepage": "https://github.com/nurakmaljalil91/profile-page-3#readme"
+}
