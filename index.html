@@ -3,64 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Nur Akmal Jalil</title>
-    <!--The css style-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Font awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 
 <body>
 
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">AKMAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+            </ul>
         </div>
-        <div class="logo">
-            <a href="index.html">
-                <h4>NUR AKMAL JALIL</h4>
-            </a>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
     </nav>
 
-    <section class="landing">
-
-        <div class="description">
-            <h1>NUR AKMAL JALIL</h1>
-            <h2>Game Developer/ Programmer/ Web Developer / Entrepreneur</h2>
-            <div class="icon">
-                <a href="https://www.instagram.com/nurakmaljalil/">
-                    <i class="fab fa-instagram fa-2x"> </i>
-                </a>
-                <a href="https://www.facebook.com/nour.arc.malt">
-                    <i class="fab fa-facebook fa-2x"> </i>
-                </a>
-                <a href="https://www.linkedin.com/in/nur-akmal-jalil-43a7b8174/">
-                    <i class="fab fa-linkedin fa-2x"> </i>
-                </a>
-                <a href="https://github.com/nurakmaljalil91">
-                    <i class="fab fa-github fa-2x"> </i>
-                </a>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+                    <p class="lead">A great starter layout for a landing page</p>
+                </div>
             </div>
-
-            <a href="https://drive.google.com/drive/folders/1ZuNp29TNs11AeZNEAd5cZ2DJ0F5jUIAP?usp=sharing" class="btn-download-cv bouncy">DOWNLOAD CV</a>
         </div>
+    </header>
 
-        <div class="image-profile"><img src="img/profile-cartoon-style.png" alt="dots"></div>
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="font-weight-light">Page Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi
+                officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim
+                fugiat reprehenderit expedita.</p>
+        </div>
+    </section>
+    <section id="project">
+        <h1>Projects</h1>
     </section>
 
-
-    <script src="js/main.js"></script>
+    <section id="contact">
+        <h1>Contact</h1>
+    </section>
 </body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </html>
