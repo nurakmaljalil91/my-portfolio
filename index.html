@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/profile_icon.ico" />
     <title>Nur Akmal Jalil</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <a class="navbar-brand" href="#">AKMAL</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,50 +29,76 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a data-scroll class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a data-scroll class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacts</a>
+                    <a data-scroll class="nav-link" href="#contact">Contacts</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Full Page Image Header with Vertically Centered Content -->
-    <header class="masthead">
+    <section class="masthead" id="#">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+                    <h1 class="font-weight-light">HOME</h1>
                     <p class="lead">A great starter layout for a landing page</p>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Page Content -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="font-weight-light">Page Content</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi
-                officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim
-                fugiat reprehenderit expedita.</p>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <section class="masthead" id="about">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">ABOUT</h1>
+                    <p class="lead">A great starter layout for a landing page</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="project">
-        <h1>Projects</h1>
+
+    <section class="masthead" id="projects">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">PROJECTS</h1>
+                    <p class="lead">A great starter layout for a landing page</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
+    <section class="masthead" id="contact">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">CONTACT</h1>
+                    <p class="lead">A great starter layout for a landing page</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+
 </body>
 <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+<script src="js/main.js"></script>
 
 </html>
